@@ -1,0 +1,253 @@
+.desktop8,
+.desktop8 * {
+  box-sizing: border-box;
+}
+.desktop8 {
+  background: #ffffff;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.text {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 1308px;
+  top: 38px;
+}
+.background {
+  width: 1440px;
+  height: 1041px;
+  position: absolute;
+  left: 0px;
+  top: -17px;
+}
+.cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: hidden;
+  object-fit: cover;
+}
+.filter {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  top: 0%;
+  overflow: hidden;
+}
+.frame3010 {
+  width: 1928px;
+  height: 4478px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.frame3011 {
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 1928px;
+  height: 4478px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.container {
+  padding: 50px 0px 50px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 1050px;
+  height: 672px;
+  position: absolute;
+  left: calc(50% - 228px);
+  top: 151px;
+  overflow: hidden;
+}
+.searchIcon {
+  position: absolute;
+  inset: 0;
+}
+.rectangle2966 {
+  border-style: solid;
+  border-color: #ee3123;
+  border-width: 1px;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  left: 1315px;
+  top: 56px;
+}
+.group3189 {
+  width: 20px;
+  height: 20px;
+  position: static;
+}
+.loupe1 {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 1329px;
+  top: 70px;
+  overflow: hidden;
+}
+.group {
+  height: auto;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  overflow: visible;
+}
+.heroShadow {
+  width: 1140px;
+  height: 831px;
+  position: absolute;
+  left: 0px;
+  top: -17px;
+  overflow: visible;
+}
+.headings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: calc(50% - 447px);
+  top: 340px;
+}
+.streamlineLegalDispute {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servingHumanityServingJusticeCaseSnapSociety {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 56px;
+  line-height: 140%;
+  font-weight: 600;
+  position: relative;
+}
+.compassionDrivesUsTogetherWeServeUpliftEnhanceCourtroomEfficiencyAndSupportFairerQuickerResolutions {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 160%;
+  font-weight: 400;
+  position: relative;
+  width: 786px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.donateButton {
+  background: #ee3123;
+  padding: 8px 24px 8px 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 238px;
+  height: 48px;
+  position: relative;
+}
+.chatNow {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+.caseSnapAi {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  position: absolute;
+  left: 18px;
+  top: 45px;
+  width: 206px;
+  height: 28px;
+}
+.navItems {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 659px;
+  top: 53px;
+}
+.navItem {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.aboutUs {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+.whatWeDo {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+.getInvolved {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+.knowledgeCorner {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}

@@ -1,0 +1,210 @@
+
+  /* GetInvolved */
+  .desktop-4,
+.desktop-4 * {
+  box-sizing: border-box;
+}
+.desktop-4 {
+  background: #ffffff;
+  height: 1024px;
+  position: relative;
+  overflow: hidden;
+}
+.works {
+  display: flex;
+  flex-direction: row;
+  gap: 174px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: calc(50% - 579.8px);
+  top: 160px;
+}
+.frame-2999 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 490px;
+  height: 613px;
+  position: relative;
+}
+.how-we-re-making-a-difference {
+  color: #444444;
+  text-align: left;
+  font-family: "PlayfairDisplay-Bold", sans-serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+}
+.we-are-transforming-the-way-legal-information-is-gathered-and-presented-by-using-ai-we-help-users-articulate-their-legal-concerns-clearly-and-ensure-that-lawyers-receive-accurate-and-well-organized-information {
+  color: #444444;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  position: relative;
+  align-self: stretch;
+}
+.frame-3001 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.our-platform-simplifies-complex-legal-information-allowing-you-to-focus-on-what-truly-matters {
+  color: #444444;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.frame-3002 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.opt-for-case-snap-ai-to-make-legal-services-more-approachable-and-less-daunting-our-user-friendly-technology-ensures-you-can-engage-with-the-legal-system-smoothly-and-effectively {
+  color: #444444;
+  text-align: left;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  position: relative;
+  flex: 1;
+}
+.deusa-logo {
+  flex-shrink: 0;
+  width: 65.07px;
+  height: 110px;
+  position: relative;
+  overflow: hidden;
+}
+.group-3325 {
+  flex-shrink: 0;
+  width: 598px;
+  height: 685px;
+  position: static;
+}
+.vector {
+  width: 282px;
+  height: 321px;
+  position: absolute;
+  left: 813px;
+  top: 34px;
+  overflow: visible;
+}
+.group-3175 {
+  width: 598px;
+  height: 490px;
+  position: static;
+}
+.rectangle-2870 {
+  background: rgba(238, 49, 35, 0.2);
+  width: 598px;
+  height: 490px;
+  position: absolute;
+  left: 664px;
+  top: 195px;
+}
+.image {
+  width: 548px;
+  height: 450px;
+  position: absolute;
+  left: 689px;
+  top: 215px;
+  object-fit: cover;
+}
+.group-3174 {
+  width: 308px;
+  height: 259.41px;
+  position: static;
+}
+.rectangle-2881 {
+  background: rgba(238, 49, 35, 0.2);
+  width: 308px;
+  height: 259.41px;
+  position: absolute;
+  left: 954px;
+  top: 0px;
+}
+.image2 {
+  width: 282.33px;
+  height: 238.82px;
+  position: absolute;
+  left: 966.83px;
+  top: 10.29px;
+  object-fit: cover;
+}
+.surface-1 {
+  width: 4.44%;
+  height: 10.71%;
+  position: absolute;
+  right: 91.94%;
+  left: 3.61%;
+  bottom: 61.56%;
+  top: 27.73%;
+  overflow: visible;
+}
+.designs {
+  width: 344.11px;
+  height: 344.78px;
+  position: absolute;
+  left: -48.5px;
+  top: 741.87px;
+  overflow: visible;
+}
+.designs2 {
+  width: 344.11px;
+  height: 344.78px;
+  position: absolute;
+  left: -64px;
+  top: 726px;
+  overflow: visible;
+}
+.hero-shadow {
+  width: 400px;
+  height: 455px;
+  position: absolute;
+  left: 1103px;
+  top: 898px;
+  overflow: visible;
+}
+.hero-shadow2 {
+  width: 400px;
+  height: 455px;
+  position: absolute;
+  left: -27px;
+  top: -285px;
+  overflow: visible;
+}
+.home {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  position: absolute;
+  left: 1299px;
+  top: 57px;
+  width: 206px;
+ height:28px;
+}
