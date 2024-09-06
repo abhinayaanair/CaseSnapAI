@@ -1,32 +1,48 @@
-// import React from "react";
-// import "../style.css";  // Ensure this path is correct
-// import "../styles/knowledgecorner.css";
+import React from "react";
+import "../style.css";  // Ensure this path is correct
+import "../styles/knowledgecorner.css";
 
-// export const KnowledgeCorner = () => {
-//   return (
-//     <div className>
+export const KnowledgeCorner = () => {
+    return (
+        <div >
+            <div className="mainKnowledge">
+                <div className="knowledge">
+                    Knowledge Corner
+                </div>
+                <div className="knowledgeClarityProgress">
+                    Knowledge, Clarity, Progress
+                </div>
+                <div className="readThis">Read This</div>
 
-//     </div>
-//   );
-// };
+<div className="questionStatement">
+    We provide questions which actively change with provision to solutions
+</div>
+            </div>
+            <div className="bottom-column">
+                <div className="frame29992">
+                    <div className="clear">Clear</div>
+                </div>
 
-// export default KnowledgeCorner;
+                <div className="frame3010">
+                    <div className="concise">Concise</div>
+                </div>
+
+                <div className="frame30082">
+                    <div className="efficient">Efficient</div>
+                </div>
+
+                <div className="frame30092">
+                    <div className="accurate">Accurate</div>
+                </div>
+            </div>
+
+           
+
+        </div>
+    );
+};
 
 
-// <div className="knowledgeClarityProgress">
-//               Knowledge, Clarity, Progress
-//             </div>
 
-// <div className="clear">Clear</div>
 
-// <div className="concise">Concise</div>
 
-// <div className="efficient">Efficient</div>
-
-// <div className="accurate">Accurate</div>
-
-// <div className="readThis">Read This</div>
-
-// <div className="questionStatement">
-//               We provide questions which actively change with provision to solutions
-//             </div>

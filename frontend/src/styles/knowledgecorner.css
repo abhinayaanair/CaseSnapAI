@@ -21,34 +21,7 @@
   top: 0px;
   overflow: hidden;
 }
-.frame3007 {
-  display: flex;
-  flex-direction: row;
-  gap: 643px;
-  align-items: center;
-  justify-content: flex-start;
-  position: absolute;
-  left: 200px;
-  top: 92px;
-}
-.frame2999 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
-.frame2998 {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  align-items: center;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
+
 .knowledgeCorner {
   color: #444444;
   text-align: left;
@@ -58,61 +31,18 @@
   font-weight: 600;
   position: relative;
 }
-.line171 {
-  margin-top: -1px;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.2);
-  border-width: 1px 0 0 0;
-  flex-shrink: 0;
-  width: 60px;
-  height: 0px;
-  position: relative;
-}
+
 .knowledgeClarityProgress {
   color: #444444;
   text-align: left;
-  font-family: "PlayfairDisplay-Bold", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
   position: relative;
   width: 490px;
 }
-.frame3009 {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  width: 500px;
-  height: 499px;
-  position: absolute;
-  left: 200px;
-  top: 244px;
-}
-.group3326 {
-  flex-shrink: 0;
-  width: 490px;
-  height: 326px;
-  position: static;
-}
-.image {
-  width: 490px;
-  height: 326px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  object-fit: cover;
-}
-.frame3008 {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-shrink: 0;
-  position: relative;
-}
+
 .keepLearning {
   color: #444444;
   text-align: left;
@@ -142,17 +72,9 @@
 }
 .frame29992 {
   background: #eaeae8;
-  padding: 40px 0px 40px 0px;
+  width: 25%;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
   justify-content: center;
-  width: 316px;
-  height: 253px;
-  position: absolute;
-  left: 121px;
-  top: 766px;
 }
 .clear {
   color: #444444;
@@ -162,21 +84,13 @@
   line-height: 50px;
   font-weight: 700;
   position: relative;
-  align-self: stretch;
+  align-self: center;
 }
 .frame3010 {
   background: #fcd6d3;
-  padding: 40px 0px 40px 0px;
+  width: 25%;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
   justify-content: center;
-  width: 480px;
-  height: 253px;
-  position: absolute;
-  left: 437px;
-  top: 766px;
 }
 .concise {
   color: #444444;
@@ -186,21 +100,14 @@
   line-height: 50px;
   font-weight: 700;
   position: relative;
-  align-self: stretch;
+  align-self: center;
 }
 .frame30082 {
   background: #dfdfdf;
-  padding: 40px 0px 40px 0px;
+  width: 25%;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
   justify-content: center;
-  width: 378px;
-  height: 253px;
-  position: absolute;
-  left: 917px;
-  top: 766px;
+  
 }
 .efficient {
   color: #444444;
@@ -210,21 +117,16 @@
   line-height: 50px;
   font-weight: 700;
   position: relative;
-  align-self: stretch;
+  align-self: center;
 }
 .frame30092 {
+  
   background: #fff5f4;
-  padding: 40px 0px 40px 0px;
+  width: 25%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 24px;
-  align-items: center;
   justify-content: center;
-  width: 322px;
-  height: 253px;
-  position: absolute;
-  left: 1295px;
-  top: 766px;
+  
 }
 .accurate {
   color: #444444;
@@ -234,7 +136,7 @@
   line-height: 50px;
   font-weight: 700;
   position: relative;
-  align-self: stretch;
+  align-self: center;
 }
 .home {
   color: #000000;
@@ -249,3 +151,14 @@
   height:28px;
 }
 
+.bottom-column{
+  display: flex;
+  border:2px solid red;
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height:20vh;
+  text-align: center;
+}

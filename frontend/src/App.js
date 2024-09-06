@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import { AboutUs } from "./pages/AboutUs";
 import { WhatWeDo } from "./pages/WhatWeDo";
 import { GetInvolved } from "./pages/GetInvolved";
-import KnowledgeCorner from "./pages/KnowledgeCorner";
+import { KnowledgeCorner } from "./pages/KnowledgeCorner";
 import Chat from "./pages/Chat";
 import Login from "./pages/Login";
 import  SignUp  from "./pages/SignUp"; // Import Desktop as a named import
