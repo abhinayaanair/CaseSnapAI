@@ -15,6 +15,6 @@ services:
       - key: CLOUD_API_SECRET
         value: Z1ySvHVQkJvl_RXGB6qD45qejlY
       - key: MONGO_URI
-        value: your-mongodb-urimongodb+srv://abhinayanair:2rSQQNNGj37OwVML@cluster0.t5tw7sl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+        value: mongodb+srv://abhinayanair:2rSQQNNGj37OwVML@cluster0.t5tw7sl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
     region: oregon
 
