@@ -19,6 +19,13 @@ from waitress import serve
 # Load environment variables from .env file
 load_dotenv()
 
+# Set the NLTK data path
+nltk_data_path = os.getenv('NLTK_DATA', '/opt/render/nltk_data')
+nltk.data.path.append(nltk_data_path)
+
+# Ensure the 'punkt' data is loaded
+nltk.download('punkt', download_dir=nltk_data_path)
+
 # Configure Cloudinary
 cloudinary.config(
     cloud_name=os.getenv('CLOUD_NAME'),
@@ -97,10 +104,10 @@ def save_to_image(chat_log):
     line_height = 20  # Height of each line of text
 
     def wrap_text(text, max_width, font):
-    # Create an ImageDraw object
+        # Create an ImageDraw object
         draw = ImageDraw.Draw(Image.new('RGB', (1, 1)))
     
-    # Split the text into lines that fit within the max_width
+        # Split the text into lines that fit within the max_width
         lines = []
         words = text.split()
         current_line = ''

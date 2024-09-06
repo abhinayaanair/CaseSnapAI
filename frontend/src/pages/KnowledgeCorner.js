@@ -6,17 +6,27 @@ export const KnowledgeCorner = () => {
     return (
         <div >
             <div className="mainKnowledge">
-                <div className="knowledge">
-                    Knowledge Corner
-                </div>
+                <div className="leftknowledge">
+                <br></br>
+                <br></br>
+                <br></br>
                 <div className="knowledgeClarityProgress">
                     Knowledge, Clarity, Progress
                 </div>
+                <div class="knowledgeImage">
+                    
+                </div>
                 <div className="readThis">Read This</div>
 
-<div className="questionStatement">
-    We provide questions which actively change with provision to solutions
-</div>
+                <div className="questionStatement">
+                    We provide questions which actively change with provision to solutions
+                </div>
+
+                </div>
+            
+            <div className="rightknowledge">
+<a href="/" className="home">Home</a>
+            </div>
             </div>
             <div className="bottom-column">
                 <div className="frame29992">
@@ -36,7 +46,7 @@ export const KnowledgeCorner = () => {
                 </div>
             </div>
 
-           
+
 
         </div>
     );

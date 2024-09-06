@@ -5,8 +5,7 @@ services:
     env: python
     plan: free
     buildCommand: |
-      pip install -r requirements.txt
-      python -c "import nltk; nltk.download('punkt', download_dir='/opt/render/nltk_data')"
+      pip install -r requirements.txt && python -c "import nltk; nltk.download('punkt', download_dir='/opt/render/nltk_data')"
     startCommand: python app.py
     envVars:
       - key: CLOUD_NAME
