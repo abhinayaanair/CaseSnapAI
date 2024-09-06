@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, send_from_directory
+from flask import Flask, request, jsonify
 from flask_cors import CORS
 from pymongo import MongoClient, errors
 from pymongo.server_api import ServerApi
@@ -9,12 +9,21 @@ import pickle
 import nltk
 from nltk.stem import WordNetLemmatizer
 from tensorflow.keras.models import load_model
-from fpdf import FPDF
+from PIL import Image, ImageDraw, ImageFont
 import os
 from dotenv import load_dotenv
+import cloudinary
+import cloudinary.uploader
 
 # Load environment variables from .env file
 load_dotenv()
+
+# Configure Cloudinary
+cloudinary.config(
+    cloud_name=os.getenv('CLOUD_NAME'),
+    api_key=os.getenv('CLOUD_API_KEY'),
+    api_secret=os.getenv('CLOUD_API_SECRET')
+)
 
 app = Flask(__name__)
 CORS(app)
@@ -73,23 +82,81 @@ def get_response(tag):
             return np.random.choice(intent['responses'])
     return "Sorry, I don't understand that."
 
-# Function to save the chat log to a PDF
-def save_to_pdf(chat_log):
-    pdf = FPDF()
-    pdf.add_page()
-    pdf.set_auto_page_break(auto=True, margin=15)
-    pdf.set_font("Arial", size=12)
+# Function to wrap text and save as an image
+def save_to_image(chat_log):
+    # Create an image with white background
+    image_width = 800
+    image_height = 1200
+    image = Image.new('RGB', (image_width, image_height), color='white')
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.truetype("arial.ttf", 16)  # Use a truetype font for better control over size
+
+    y_position = 10
+    max_y_position = image_height - 10  # Prevent text from going off the bottom of the image
+    line_height = 20  # Height of each line of text
+
+    def wrap_text(text, max_width, font):
+    # Create an ImageDraw object
+        draw = ImageDraw.Draw(Image.new('RGB', (1, 1)))
     
+    # Split the text into lines that fit within the max_width
+        lines = []
+        words = text.split()
+        current_line = ''
+    
+        for word in words:
+            test_line = f"{current_line} {word}".strip()
+            bbox = draw.textbbox((0, 0), test_line, font=font)
+            line_width = bbox[2] - bbox[0]  # bbox gives (left, top, right, bottom)
+        
+            if line_width <= max_width:
+                current_line = test_line
+            else:
+                if current_line:
+                    lines.append(current_line)
+                current_line = word
+    
+        if current_line:
+            lines.append(current_line)
+    
+        return lines
+
     for entry in chat_log:
-        pdf.set_font("Arial", style='B', size=12)
-        pdf.cell(200, 10, txt="User: " + entry['question'], ln=True, align='L')
-        pdf.set_font("Arial", size=12)
-        pdf.multi_cell(0, 10, txt="Bot: " + entry['response'])
-        pdf.ln(10)
-    
-    file_path = 'casesnap_chat_log.pdf'
-    pdf.output(file_path)
-    return file_path
+        question_text = f"User: {entry['question']}"
+        response_text = f"Bot: {entry['response']}"
+        
+        # Wrap and draw the question text
+        question_lines = wrap_text(question_text, image_width - 20, font)
+        for line in question_lines:
+            draw.text((10, y_position), line, fill='black', font=font)
+            y_position += line_height
+        y_position += line_height  # Add extra space after each entry
+
+        # Wrap and draw the response text
+        response_lines = wrap_text(response_text, image_width - 20, font)
+        for line in response_lines:
+            draw.text((10, y_position), line, fill='blue', font=font)
+            y_position += line_height
+        y_position += line_height * 2  # Add extra space after each entry
+
+        # Check if we need to increase image size
+        if y_position > max_y_position:
+            # Resize the image if needed
+            new_image_height = image_height + 500
+            new_image = Image.new('RGB', (image_width, new_image_height), color='white')
+            new_image.paste(image, (0, 0))
+            image = new_image
+            draw = ImageDraw.Draw(image)
+            max_y_position = new_image_height - 10
+
+    # Save the image
+    file_path = 'casesnap_chat_log.jpg'
+    image.save(file_path)
+
+    # Upload to Cloudinary and get the direct download URL
+    response = cloudinary.uploader.upload(file_path, resource_type='image')
+    os.remove(file_path)  # Remove the local file after uploading
+    return response['secure_url']
 
 @app.route('/signup', methods=['POST'])
 def signup():
@@ -143,9 +210,9 @@ def chat():
     user_input = request.json.get('message')
 
     if user_input.lower() == 'end':
-        pdf_path = save_to_pdf(chat_log)
+        image_url = save_to_image(chat_log)
         chat_log = []  # Clear chat log after saving
-        return jsonify({'download_link': f'/download/{pdf_path}'})
+        return jsonify({'download_link': image_url})
     
     predicted_tag = predict_class(user_input)
     response = get_response(predicted_tag)
@@ -153,10 +220,6 @@ def chat():
     chat_log.append({'question': user_input, 'response': response})
 
     return jsonify({'response': response})
-
-@app.route('/download/<filename>', methods=['GET'])
-def download_file(filename):
-    return send_from_directory('.', filename, as_attachment=True)
 
 if __name__ == '__main__':
     app.run(debug=True)
