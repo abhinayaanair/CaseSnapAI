@@ -3,41 +3,48 @@ import axios from 'axios';
 import '../styles/chat.css';
 import '../styles/render.css';
 
+const LoadingIndicator = () => (
+  <div className="loading-container">
+    <div className="loading-spinner"></div>
+    <p>Loading...</p>
+  </div>
+);
+
 const Chat = () => {
   const [message, setMessage] = useState('');
   const [responses, setResponses] = useState([]);
-  const [showDownloadButton, setShowDownloadButton] = useState(false);
+  const [downloadUrl, setDownloadUrl] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSend = async () => {
-    if (!message.trim()) return; // Prevent sending empty messages
+    if (!message.trim()) return;
 
-    if (message.trim().toLowerCase() === 'end') {
-      setMessage('');
-      try {
-        const response = await axios.post('http://localhost:5000/chat', { message });
-        if (response.data.download_link) {
-          setShowDownloadButton(true); // Show download button when "end" is typed
-        }
-      } catch (error) {
-        console.error("Error sending message:", error);
-      }
-      return;
-    }
+    setLoading(true);
 
     try {
       const response = await axios.post('http://localhost:5000/chat', { message });
-      if (response.data.response) {
+
+      console.log("Response data:", response.data); // Debugging line
+
+      if (message.trim().toLowerCase() === 'end') {
+        if (response.data.download_link) {
+          setDownloadUrl(response.data.download_link);
+        }
+      } else if (response.data.response) {
         setResponses([...responses, { user: message, bot: response.data.response }]);
         setMessage('');
       }
+
     } catch (error) {
       console.error("Error sending message:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
-      event.preventDefault(); // Prevent the default behavior of Enter key
+      event.preventDefault();
       handleSend();
     }
   };
@@ -68,21 +75,22 @@ const Chat = () => {
             type="text"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            onKeyPress={handleKeyPress} // Add onKeyPress event handler
+            onKeyPress={handleKeyPress}
             placeholder="Type your message..."
             required
           />
-          <button type="submit">Send</button>
-          {showDownloadButton && (
+          <button type="submit" disabled={loading}>Send</button>
+          {loading && <LoadingIndicator />}
+          {downloadUrl && (
             <a 
-              href="http://localhost:5000/download/casesnap_chat_log.pdf" 
+              href={downloadUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              download
+              download="casesnap_chat_log.jpg"
               className="download-link"
             >
               <button type="button" className="joinus download">
-                Download Chat Log PDF
+                Download Chat Log Image
               </button>
             </a>
           )}

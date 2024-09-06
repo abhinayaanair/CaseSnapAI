@@ -41,6 +41,7 @@ html, body {
 }
 
 .chat-form {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
