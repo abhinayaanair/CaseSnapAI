@@ -14,6 +14,7 @@ import os
 from dotenv import load_dotenv
 import cloudinary
 import cloudinary.uploader
+from waitress import serve
 
 # Load environment variables from .env file
 load_dotenv()
@@ -222,5 +223,6 @@ def chat():
     return jsonify({'response': response})
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if PORT not set
-    app.run(host='0.0.0.0', port=port)
+    port = int(os.environ.get("PORT", 8080))
+    # Run the Waitress server
+    serve(app, host='0.0.0.0', port=port)
