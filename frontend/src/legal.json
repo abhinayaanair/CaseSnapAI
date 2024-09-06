@@ -1,0 +1,670 @@
+[
+    {
+        "question": "What is a contract?",
+        "answer": "A contract is a legally binding agreement between two or more parties that is enforceable by law."
+    },
+    {
+        "question": "What are the essential elements of a valid contract?",
+        "answer": "The essential elements of a valid contract are offer, acceptance, consideration, mutual consent, and legality."
+    },
+    {
+        "question": "What is a tort?",
+        "answer": "A tort is a civil wrong that causes harm or loss, leading to legal liability for the person who commits the tortious act."
+    },
+    {
+        "question": "What is the difference between civil law and criminal law?",
+        "answer": "Civil law deals with disputes between individuals or organizations, while criminal law involves offenses against the state or public."
+    },
+    {
+        "question": "What is intellectual property?",
+        "answer": "Intellectual property refers to creations of the mind, such as inventions, literary works, and trademarks, that are protected by law."
+    },
+    {
+        "question": "What is a trademark?",
+        "answer": "A trademark is a symbol, word, or phrase legally registered to represent a company or product."
+    },
+    {
+        "question": "What is the purpose of copyright law?",
+        "answer": "Copyright law protects the original works of authorship, giving the creator exclusive rights to use and distribute their work."
+    },
+    {
+        "question": "What is a patent?",
+        "answer": "A patent is a government grant that gives an inventor exclusive rights to make, use, and sell their invention for a limited time."
+    },
+    {
+        "question": "What is the statute of limitations?",
+        "answer": "The statute of limitations is the maximum time period within which legal proceedings can be initiated after an event."
+    },
+    {
+        "question": "What is a legal precedent?",
+        "answer": "A legal precedent is a judicial decision that is used as an example or rule for future similar cases."
+    },
+    {
+        "question": "What is the difference between mediation and arbitration?",
+        "answer": "Mediation is a voluntary process where a neutral third party helps resolve disputes, while arbitration is a binding process where a neutral arbitrator makes a decision."
+    },
+    {
+        "question": "What is due process?",
+        "answer": "Due process is the legal requirement that the state must respect all legal rights owed to a person, ensuring fair treatment."
+    },
+    {
+        "question": "What is the difference between a misdemeanor and a felony?",
+        "answer": "A misdemeanor is a less serious crime punishable by a fine or short jail term, while a felony is a more serious crime punishable by imprisonment for more than a year."
+    },
+    {
+        "question": "What is an affidavit?",
+        "answer": "An affidavit is a written statement confirmed by oath or affirmation, used as evidence in court."
+    },
+    {
+        "question": "What is the burden of proof?",
+        "answer": "The burden of proof is the obligation to prove one's assertion or claim in a legal case."
+    },
+    {
+        "question": "What is habeas corpus?",
+        "answer": "Habeas corpus is a legal action that requires a person under arrest to be brought before a judge to determine the legality of their detention."
+    },
+    {
+        "question": "What is double jeopardy?",
+        "answer": "Double jeopardy is a legal principle that prohibits a person from being tried twice for the same crime."
+    },
+    {
+        "question": "What is an injunction?",
+        "answer": "An injunction is a court order that requires a party to do or refrain from doing specific acts."
+    },
+    {
+        "question": "What is the purpose of antitrust laws?",
+        "answer": "Antitrust laws are designed to prevent monopolies and promote competition in the marketplace."
+    },
+    {
+        "question": "What is legal liability?",
+        "answer": "Legal liability is the responsibility to pay for damages or to follow legal obligations imposed by law."
+    },
+    {
+        "question": "What is a breach of contract?",
+        "answer": "A breach of contract occurs when one party fails to fulfill their obligations under the contract."
+    },
+    {
+        "question": "What is an easement?",
+        "answer": "An easement is a legal right to use another person's land for a specific purpose."
+    },
+    {
+        "question": "What is the difference between a will and a trust?",
+        "answer": "A will is a legal document that expresses a person's wishes regarding the distribution of their property after death, while a trust is a fiduciary arrangement where a trustee holds and manages assets for the benefit of beneficiaries."
+    },
+    {
+        "question": "What is the standard of proof in a civil case?",
+        "answer": "The standard of proof in a civil case is the preponderance of the evidence, meaning the evidence must show that it is more likely than not that the claim is true."
+    },
+    {
+        "question": "What is defamation?",
+        "answer": "Defamation is the act of making false statements about a person that harm their reputation."
+    },
+    {
+        "question": "What is the difference between slander and libel?",
+        "answer": "Slander is spoken defamation, while libel is written or published defamation."
+    },
+    {
+        "question": "What is the role of a power of attorney?",
+        "answer": "A power of attorney is a legal document that grants a person the authority to act on behalf of another in legal or financial matters."
+    },
+    {
+        "question": "What is a fiduciary duty?",
+        "answer": "A fiduciary duty is the legal obligation of one party to act in the best interest of another party."
+    },
+    {
+        "question": "What is bankruptcy?",
+        "answer": "Bankruptcy is a legal process through which individuals or businesses unable to pay their debts can seek relief from some or all of their obligations."
+    },
+    {
+        "question": "What is the difference between Chapter 7 and Chapter 13 bankruptcy?",
+        "answer": "Chapter 7 bankruptcy involves liquidation of assets to pay off debts, while Chapter 13 bankruptcy allows individuals to reorganize their debts and create a repayment plan."
+    },
+    {
+        "question": "What is a class action lawsuit?",
+        "answer": "A class action lawsuit is a legal action filed by a group of people with similar claims against a common defendant."
+    },
+    {
+        "question": "What is the purpose of labor laws?",
+        "answer": "Labor laws are designed to protect the rights of workers, ensuring fair wages, safe working conditions, and protection from discrimination."
+    },
+    {
+        "question": "What is an employment contract?",
+        "answer": "An employment contract is an agreement between an employer and an employee that outlines the terms and conditions of employment."
+    },
+    {
+        "question": "What is wrongful termination?",
+        "answer": "Wrongful termination occurs when an employee is fired in violation of the law or an employment contract."
+    },
+    {
+        "question": "What is workers' compensation?",
+        "answer": "Workers' compensation is a form of insurance that provides wage replacement and medical benefits to employees injured on the job."
+    },
+    {
+        "question": "What is the Fair Labor Standards Act (FLSA)?",
+        "answer": "The Fair Labor Standards Act (FLSA) is a federal law that establishes minimum wage, overtime pay, and child labor standards."
+    },
+    {
+        "question": "What is sexual harassment?",
+        "answer": "Sexual harassment is unwanted and inappropriate behavior of a sexual nature that creates a hostile or offensive work environment."
+    },
+    {
+        "question": "What is the Americans with Disabilities Act (ADA)?",
+        "answer": "The Americans with Disabilities Act (ADA) is a federal law that prohibits discrimination against individuals with disabilities in employment, public accommodations, and other areas."
+    },
+    {
+        "question": "What is the Family and Medical Leave Act (FMLA)?",
+        "answer": "The Family and Medical Leave Act (FMLA) is a federal law that allows eligible employees to take unpaid, job-protected leave for certain family and medical reasons."
+    },
+    {
+        "question": "What is age discrimination?",
+        "answer": "Age discrimination occurs when an employee or job applicant is treated unfairly because of their age, particularly if they are 40 years or older."
+    },
+    {
+        "question": "What is the difference between a plaintiff and a defendant?",
+        "answer": "A plaintiff is the party who initiates a lawsuit, while a defendant is the party being sued."
+    },
+    {
+        "question": "What is a deposition?",
+        "answer": "A deposition is a sworn, out-of-court testimony of a witness used to gather information before a trial."
+    },
+    {
+        "question": "What is a subpoena?",
+        "answer": "A subpoena is a legal document that orders a person to appear in court or produce evidence."
+    },
+    {
+        "question": "What is the purpose of discovery in a lawsuit?",
+        "answer": "Discovery is the pre-trial process where parties exchange information and gather evidence to prepare for trial."
+    },
+    {
+        "question": "What is a summary judgment?",
+        "answer": "A summary judgment is a court decision made without a full trial when there are no material facts in dispute, allowing the case to be decided on legal issues alone."
+    },
+    {
+        "question": "What is the difference between a bench trial and a jury trial?",
+        "answer": "In a bench trial, the judge serves as the fact-finder and decides the case, while in a jury trial, a group of peers determines the facts and the judge provides instructions on the law."
+    },
+    {
+        "question": "What is an amicus curiae?",
+        "answer": "An amicus curiae, or 'friend of the court,' is a person or organization not a party to a case who assists the court by offering information, expertise, or insight relevant to the case."
+    },
+    {
+        "question": "What is a plea bargain?",
+        "answer": "A plea bargain is an agreement between the defendant and the prosecutor where the defendant pleads guilty to a lesser charge in exchange for a more lenient sentence or dropping of other charges."
+    },
+    {
+        "question": "What is the role of a public defender?",
+        "answer": "A public defender is a lawyer appointed by the court to represent defendants who cannot afford to hire a private attorney in criminal cases."
+    },
+    {
+        "question": "What is a parole?",
+        "answer": "Parole is the conditional release of a prisoner before the end of their sentence, subject to compliance with certain conditions."
+    },
+    {
+        "question": "What is a writ of certiorari?",
+        "answer": "A writ of certiorari is an order by a higher court to review the decision of a lower court, typically used by the Supreme Court of the United States."
+    },
+    {
+        "question": "What is a statute?",
+        "answer": "A statute is a written law passed by a legislative body at the federal, state, or local level."
+    },
+    {
+        "question": "What is the difference between common law and statutory law?",
+        "answer": "Common law is law developed through judicial decisions, while statutory law is written law enacted by legislative bodies."
+    },
+    {
+        "question": "What is the role of the appellate court?",
+        "answer": "The appellate court reviews the decisions of lower courts to determine whether legal errors were made that could affect the outcome of the case."
+    },
+    {
+        "question": "What is judicial review?",
+        "answer": "Judicial review is the power of courts to assess whether a law, government action, or lower court decision is consistent with the Constitution or other higher laws."
+    },
+    {
+        "question": "What is sovereign immunity?",
+        "answer": "Sovereign immunity is a legal doctrine that prevents the government or its subdivisions, agencies, and officials from being sued without its consent."
+    },
+    {
+        "question": "What is a holding company?",
+        "answer": "A holding company is a business entity that owns shares of other companies to control them, but does not produce goods or services itself."
+    },
+    {
+        "question": "What is the difference between a merger and an acquisition?",
+        "answer": "A merger is the combination of two companies into a single entity, while an acquisition involves one company buying and taking over another company."
+    },
+    {
+        "question": "What is a non-disclosure agreement (NDA)?",
+        "answer": "A non-disclosure agreement (NDA) is a legal contract that restricts the sharing of confidential information between parties."
+    },
+    {
+        "question": "What is a hostile takeover?",
+        "answer": "A hostile takeover occurs when one company attempts to acquire another company against the wishes of the target company's management."
+    },
+    {
+        "question": "What is a shareholder?",
+        "answer": "A shareholder is an individual or entity that owns shares in a corporation, giving them partial ownership of the company."
+    },
+    {
+        "question": "What is insider trading?",
+        "answer": "Insider trading involves buying or selling a publicly-traded company's stock based on non-public, material information about the company."
+    },
+    {
+        "question": "What is a franchise?",
+        "answer": "A franchise is a business model where a franchisee is granted the right to operate a business using the brand, products, and business model of the franchisor."
+    },
+    {
+        "question": "What is the difference between a limited liability company (LLC) and a corporation?",
+        "answer": "An LLC offers limited liability protection to its owners with a flexible management structure, while a corporation is a more formal entity with shareholders, directors, and officers."
+    },
+    {
+        "question": "What is a breach of fiduciary duty?",
+        "answer": "A breach of fiduciary duty occurs when a person in a fiduciary role acts in their own interest rather than in the best interest of those they are responsible for."
+    },
+    {
+        "question": "What is a secured loan?",
+        "answer": "A secured loan is a loan backed by collateral, such as property or assets, that the lender can seize if the borrower defaults."
+    },
+    {
+        "question": "What is a power of sale?",
+        "answer": "A power of sale is a clause in a mortgage or deed of trust that allows the lender to sell the property without judicial foreclosure if the borrower defaults."
+    },
+    {
+        "question": "What is probate?",
+        "answer": "Probate is the legal process of administering a deceased person's estate, including validating the will, paying debts, and distributing assets to beneficiaries."
+    },
+    {
+        "question": "What is an irrevocable trust?",
+        "answer": "An irrevocable trust is a trust that cannot be modified or terminated by the grantor once it has been established, except under specific circumstances."
+    },
+    {
+        "question": "What is the difference between a living will and a last will and testament?",
+        "answer": "A living will outlines a person's wishes for medical treatment in the event they are incapacitated, while a last will and testament details how their assets should be distributed after death."
+    },
+    {
+        "question": "What is adverse possession?",
+        "answer": "Adverse possession is a legal doctrine that allows a person to claim ownership of land under certain conditions if they have occupied it for a certain period without the owner's permission."
+    },
+    {
+        "question": "What is eminent domain?",
+        "answer": "Eminent domain is the government's power to take private property for public use, with compensation provided to the property owner."
+    },
+    {
+        "question": "What is zoning law?",
+        "answer": "Zoning law regulates land use within a jurisdiction, determining what types of buildings and activities are allowed in specific areas."
+    },
+    {
+        "question": "What is a restrictive covenant?",
+        "answer": "A restrictive covenant is a clause in a deed or lease that limits the way the property can be used, often to preserve the character of a neighborhood."
+    },
+    {
+        "question": "What is a letter of intent?",
+        "answer": "A letter of intent is a document outlining the preliminary understanding between parties who intend to enter into a contract, often used in business transactions."
+    },
+    {
+        "question": "What is a material breach?",
+        "answer": "A material breach is a significant violation of a contract that undermines the very essence of the agreement, often leading to its termination."
+    },
+    {
+        "question": "What is an option contract?",
+        "answer": "An option contract is an agreement that gives one party the right, but not the obligation, to buy or sell something at a specified price within a certain period."
+    },
+    {
+        "question": "What is the difference between a guarantor and a co-signer?",
+        "answer": "A guarantor agrees to pay a debt if the primary borrower defaults, while a co-signer shares equal responsibility for the debt from the beginning."
+    },
+    {
+        "question": "What is contributory negligence?",
+        "answer": "Contributory negligence is a legal doctrine that can bar a plaintiff from recovering damages if they are found to have contributed to their own injury."
+    },
+    {
+        "question": "What is comparative negligence?",
+        "answer": "Comparative negligence is a legal principle that reduces the plaintiff's recovery in a tort claim based on the degree of their own fault in causing the injury."
+    },
+    {
+        "question": "What is a promissory note?",
+        "answer": "A promissory note is a financial instrument in which one party promises in writing to pay a specific sum of money to another party under defined terms."
+    },
+    {
+        "question": "What is usury?",
+        "answer": "Usury is the practice of charging excessively high interest rates on loans, which is regulated or prohibited by law in many jurisdictions."
+    },
+    {
+        "question": "What is the parol evidence rule?",
+        "answer": "The parol evidence rule is a legal doctrine that prevents parties from presenting extrinsic evidence of prior or contemporaneous agreements that contradict a written contract."
+    },
+    {
+        "question": "What is a force majeure clause?",
+        "answer": "A force majeure clause is a contract provision that frees parties from liability or obligation when an extraordinary event or circumstance beyond their control occurs."
+    },
+    {
+        "question": "What is indemnification?",
+        "answer": "Indemnification is a contractual obligation of one party to compensate the other for any losses or damages incurred as a result of specific actions or events."
+    },
+    {
+        "question": "What is the doctrine of privity of contract?",
+        "answer": "The doctrine of privity of contract states that only parties to a contract can enforce or be bound by its terms."
+    },
+    {
+        "question": "What is quantum meruit?",
+        "answer": "Quantum meruit is a legal principle that allows a person to recover the value of work performed or services rendered when no contract exists or when a contract is unenforceable."
+    },
+    {
+        "question": "What is the difference between express and implied contracts?",
+        "answer": "An express contract is clearly stated in words, either written or spoken, while an implied contract is formed by the actions or conduct of the parties."
+    },
+    {
+        "question": "What is the doctrine of estoppel?",
+        "answer": "The doctrine of estoppel prevents a party from contradicting something they previously stated or agreed to if it would harm another party who relied on the original statement."
+    },
+    {
+        "question": "What is a liquidated damages clause?",
+        "answer": "A liquidated damages clause is a provision in a contract that specifies a predetermined amount of money that must be paid as damages if a party breaches the contract."
+    },
+    {
+        "question": "What is the mirror image rule?",
+        "answer": "The mirror image rule requires that the terms of an acceptance must exactly match the terms of the offer for a valid contract to be formed."
+    },
+    {
+        "question": "What is the mailbox rule?",
+        "answer": "The mailbox rule is a legal principle stating that an acceptance of an offer becomes effective once it is sent, not when it is received by the offeror."
+    },
+    {
+        "question": "What is a counteroffer?",
+        "answer": "A counteroffer is a response to an offer in which the original terms are rejected and new terms are proposed, effectively terminating the original offer."
+    },
+    {
+        "question": "What is promissory estoppel?",
+        "answer": "Promissory estoppel is a legal doctrine that prevents a party from reneging on a promise if the other party has relied on that promise to their detriment."
+    },
+    {
+        "question": "What is the difference between rescission and cancellation of a contract?",
+        "answer": "Rescission is the cancellation of a contract that returns the parties to their pre-contractual positions, while cancellation ends the contract but may not necessarily undo past actions."
+    },
+    {
+        "question": "What is novation?",
+        "answer": "Novation is the substitution of a new contract or party in place of an old one, with the consent of all original parties, extinguishing the old contract."
+    },
+    {
+        "question": "What is a joint venture?",
+        "answer": "A joint venture is a business arrangement where two or more parties agree to combine resources for a specific project or business activity, sharing profits and losses."
+    },
+    {
+        "question": "What is an agency relationship?",
+        "answer": "An agency relationship is a fiduciary relationship where one party, the agent, is authorized to act on behalf of another party, the principal, in business transactions."
+    },
+    {
+        "question": "What is vicarious liability?",
+        "answer": "Vicarious liability is the legal responsibility imposed on one party for the actions of another, typically an employer for the actions of an employee."
+    },
+    {
+        "question": "What is respondeat superior?",
+        "answer": "Respondeat superior is a legal doctrine holding employers liable for the actions of their employees if those actions occur within the scope of employment."
+    },
+    {
+        "question": "What is the rule against perpetuities?",
+        "answer": "The rule against perpetuities is a legal doctrine that prevents interests in property from being granted in a way that could last indefinitely, usually beyond 21 years after the death of a relevant person."
+    },
+    {
+        "question": "What is the doctrine of laches?",
+        "answer": "The doctrine of laches is an equitable defense that bars a claim if there has been an unreasonable delay in asserting the claim, and that delay has prejudiced the opposing party."
+    },
+    {
+        "question": "What is stare decisis?",
+        "answer": "Stare decisis is a legal principle that obligates courts to follow established precedents when making rulings in new cases."
+    },
+    {
+        "question": "What is the difference between an assignment and a delegation in contract law?",
+        "answer": "An assignment involves transferring rights under a contract to another party, while a delegation involves transferring duties or obligations under a contract."
+    },
+    {
+        "question": "What is unjust enrichment?",
+        "answer": "Unjust enrichment occurs when one party benefits at the expense of another in circumstances where it would be inequitable to allow the benefit without compensation."
+    },
+    {
+        "question": "What is a constructive trust?",
+        "answer": "A constructive trust is an equitable remedy imposed by a court to prevent unjust enrichment by transferring the property in question to the person rightfully entitled to it."
+    },
+    {
+        "question": "What is a guaranty?",
+        "answer": "A guaranty is a legal commitment made by a third party to fulfill the obligations of a borrower if the borrower fails to meet their obligations."
+    },
+    {
+        "question": "What is a surety bond?",
+        "answer": "A surety bond is a three-party agreement where a surety guarantees that the principal will fulfill their obligations to the obligee, typically used in construction contracts."
+    },
+    {
+        "question": "What is the difference between mediation and conciliation?",
+        "answer": "Mediation involves a neutral third party helping disputing parties reach a voluntary agreement, while conciliation also involves a third party but with a more active role in proposing solutions."
+    },
+    {
+        "question": "What is a quiet title action?",
+        "answer": "A quiet title action is a lawsuit filed to establish ownership of property and remove any claims or disputes against the title."
+    },
+    {
+        "question": "What is the clean hands doctrine?",
+        "answer": "The clean hands doctrine is an equitable principle that denies relief to a party who has engaged in unethical or wrongful behavior in relation to the subject of their claim."
+    },
+    {
+        "question": "What is an exculpatory clause?",
+        "answer": "An exculpatory clause is a provision in a contract that relieves one party of liability for harm or damages caused during the execution of the contract."
+    },
+    {
+        "question": "What is a buy-sell agreement?",
+        "answer": "A buy-sell agreement is a legally binding contract that outlines how a partner's share in a business will be handled if they leave the business, pass away, or become incapacitated."
+    },
+    {
+        "question": "What is a letter of credit?",
+        "answer": "A letter of credit is a document issued by a bank guaranteeing that a seller will receive payment from the buyer if the buyer fails to pay."
+    },
+    {
+        "question": "What is a derivative lawsuit?",
+        "answer": "A derivative lawsuit is a legal action brought by shareholders on behalf of a corporation to enforce the corporation's rights when the management fails to do so."
+    },
+    {
+        "question": "What is eminent domain?",
+        "answer": "Eminent domain is the power of the government to take private property for public use, with compensation provided to the property owner."
+    },
+    {
+        "question": "What is a living trust?",
+        "answer": "A living trust is a legal document created during a person's lifetime where a trustee holds and manages the trust assets for the benefit of the beneficiaries."
+    },
+    {
+        "question": "What is a no-contest clause?",
+        "answer": "A no-contest clause in a will or trust discourages beneficiaries from challenging the document by penalizing them, often by disinheriting them, if they do."
+    },
+    {
+        "question": "What is a deed of trust?",
+        "answer": "A deed of trust is a legal document that transfers the legal title of property to a trustee as security for a loan, with the borrower retaining equitable title."
+    },
+    {
+        "question": "What is a non-compete clause?",
+        "answer": "A non-compete clause is a contract provision that prohibits one party, usually an employee, from engaging in business that competes with their current or former employer for a certain period."
+    },
+    {
+        "question": "What is a fiduciary?",
+        "answer": "A fiduciary is an individual or organization that acts on behalf of another person or entity, managing assets with the highest level of trust and good faith."
+    },
+    {
+        "question": "What is the difference between an express and an implied warranty?",
+        "answer": "An express warranty is a specific guarantee made by a seller about the quality or functionality of a product, while an implied warranty is a legally imposed guarantee that a product will meet certain minimum standards."
+    },
+    {
+        "question": "What is the duty of care?",
+        "answer": "The duty of care is a legal obligation requiring individuals and organizations to exercise a reasonable level of care to prevent harm to others."
+    },
+    {
+        "question": "What is piercing the corporate veil?",
+        "answer": "Piercing the corporate veil is a legal concept where courts set aside limited liability and hold shareholders or directors personally liable for a corporation's actions or debts."
+    },
+    {
+        "question": "What is the difference between an executor and an administrator of an estate?",
+        "answer": "An executor is a person named in a will to manage the deceased's estate, while an administrator is appointed by the court to do so if there is no will."
+    },
+    {
+        "question": "What is an injunction?",
+        "answer": "An injunction is a court order requiring a party to do or refrain from doing a specific act to prevent harm or injustice."
+    },
+    {
+        "question": "What is a constructive discharge?",
+        "answer": "Constructive discharge occurs when an employee resigns due to working conditions so intolerable that a reasonable person would feel compelled to quit."
+    },
+    {
+        "question": "What is the difference between libel and slander?",
+        "answer": "Libel is defamation in written or published form, while slander is defamation in spoken form."
+    },
+    {
+        "question": "What is a durable power of attorney?",
+        "answer": "A durable power of attorney is a legal document that grants someone the authority to make decisions on your behalf even if you become incapacitated."
+    },
+    {
+        "question": "What is the difference between a general and a special power of attorney?",
+        "answer": "A general power of attorney grants broad authority to act on behalf of the principal, while a special power of attorney grants authority limited to specific tasks or situations."
+    },
+    {
+        "question": "What is double jeopardy?",
+        "answer": "Double jeopardy is a constitutional protection that prevents an individual from being tried twice for the same offense after acquittal or conviction."
+    },
+    {
+        "question": "What is the legal concept of adverse possession?",
+        "answer": "Adverse possession is a legal doctrine that allows a person to claim ownership of land under certain conditions, including continuous and open occupation without the owner's permission for a statutory period."
+    },
+    {
+        "question": "What is a material breach of contract?",
+        "answer": "A material breach of contract occurs when one party fails to perform a duty under the contract, significantly harming the other party and allowing them to seek legal remedies."
+    },
+    {
+        "question": "What is a quitclaim deed?",
+        "answer": "A quitclaim deed is a legal document that transfers any interest or claim a grantor may have in a property without making any warranties or guarantees about the title."
+    },
+    {
+        "question": "What is the difference between arbitration and litigation?",
+        "answer": "Arbitration is a private dispute resolution process where an arbitrator makes a binding decision, while litigation involves resolving disputes through the public court system."
+    },
+    {
+        "question": "What is a power of attorney for health care?",
+        "answer": "A power of attorney for health care is a legal document that allows an individual to appoint someone to make medical decisions on their behalf if they become incapacitated."
+    },
+    {
+        "question": "What is the legal doctrine of res judicata?",
+        "answer": "Res judicata is a legal doctrine that prevents the same case or issue from being tried again once it has been conclusively decided by a competent court."
+    },
+    {
+        "question": "What is a statute of repose?",
+        "answer": "A statute of repose is a law that sets an absolute deadline for filing certain types of legal claims, regardless of when the harm or defect is discovered."
+    },
+    {
+        "question": "What is contributory negligence?",
+        "answer": "Contributory negligence is a legal defense in tort law where the plaintiff's own negligence contributed to their injury, potentially reducing or barring their recovery."
+    },
+    {
+        "question": "What is comparative negligence?",
+        "answer": "Comparative negligence is a legal principle that reduces the plaintiff's recovery in proportion to their degree of fault in causing their injury."
+    },
+    {
+        "question": "What is a third-party beneficiary?",
+        "answer": "A third-party beneficiary is someone who benefits from a contract made between two other parties and may have the right to enforce the contract under certain conditions."
+    },
+    {
+        "question": "What is a hostile work environment?",
+        "answer": "A hostile work environment is a form of workplace harassment where unwelcome conduct based on race, sex, or other protected characteristics creates an intimidating or offensive atmosphere."
+    },
+    {
+        "question": "What is a tortfeasor?",
+        "answer": "A tortfeasor is a person or entity who commits a tort, which is a wrongful act leading to legal liability."
+    },
+    {
+        "question": "What is the difference between a joint tenancy and a tenancy in common?",
+        "answer": "In a joint tenancy, co-owners have equal shares and the right of survivorship, while in a tenancy in common, co-owners can have unequal shares and no right of survivorship."
+    },
+    {
+        "question": "What is an escrow account?",
+        "answer": "An escrow account is a financial account where funds or assets are held by a third party until certain conditions are met, often used in real estate transactions."
+    },
+    {
+        "question": "What is the parol evidence rule?",
+        "answer": "The parol evidence rule is a legal principle that prevents parties from presenting extrinsic evidence of prior or contemporaneous agreements that contradict the written terms of a contract."
+    },
+    {
+        "question": "What is a contingency fee?",
+        "answer": "A contingency fee is a payment arrangement where a lawyer receives a percentage of the client's settlement or judgment if the case is won, rather than charging upfront fees."
+    },
+    {
+        "question": "What is a fiduciary duty?",
+        "answer": "A fiduciary duty is a legal obligation for one party to act in the best interest of another, typically in relationships involving trust, such as between a trustee and beneficiary."
+    },
+    {
+        "question": "What is a bailment?",
+        "answer": "A bailment is a legal relationship where one person (the bailor) temporarily transfers possession of personal property to another (the bailee) for a specific purpose, with the understanding that it will be returned."
+    },
+    {
+        "question": "What is a constructive eviction?",
+        "answer": "Constructive eviction occurs when a landlord's actions or failure to act significantly interfere with a tenant's ability to use and enjoy the leased property, effectively forcing the tenant to leave."
+    },
+    {
+        "question": "What is a waiver of subrogation?",
+        "answer": "A waiver of subrogation is an agreement where one party waives the right to seek compensation from a third party after receiving insurance payment for a loss."
+    },
+    {
+        "question": "What is specific performance?",
+        "answer": "Specific performance is a legal remedy that compels a party to fulfill their obligations under a contract, typically used in cases involving unique or irreplaceable items like real estate."
+    },
+    {
+        "question": "What is an easement?",
+        "answer": "An easement is a legal right to use another person's land for a specific purpose, such as a right of way, without owning the land."
+    },
+    {
+        "question": "What is a derivative action?",
+        "answer": "A derivative action is a lawsuit brought by a shareholder on behalf of a corporation against a third party, often an insider like an executive, for harm done to the corporation."
+    },
+    {
+        "question": "What is a legal precedent?",
+        "answer": "A legal precedent is a previous court decision or ruling that serves as a guide or authority for future cases with similar facts or legal issues."
+    },
+    {
+        "question": "What is the difference between a unilateral and a bilateral contract?",
+        "answer": "A unilateral contract involves a promise in exchange for an act, while a bilateral contract involves mutual promises between two parties."
+    },
+    {
+        "question": "What is the statute of frauds?",
+        "answer": "The statute of frauds is a legal doctrine that requires certain types of contracts, such as those for the sale of real estate or agreements lasting more than a year, to be in writing to be enforceable."
+    },
+    {
+        "question": "What is a hold harmless agreement?",
+        "answer": "A hold harmless agreement is a contract in which one party agrees not to hold the other party liable for any potential loss, damage, or legal liability."
+    },
+    {
+        "question": "What is the difference between an express authority and an implied authority?",
+        "answer": "Express authority is the explicit power granted to an agent by a principal, while implied authority is the power to perform acts necessary to fulfill the agent's duties, even if not explicitly stated."
+    },
+    {
+        "question": "What is an interpleader action?",
+        "answer": "An interpleader action is a legal procedure used to resolve disputes where multiple parties claim the same money or property, allowing the holder to deposit the funds or property with the court and avoid liability."
+    },
+    {
+        "question": "What is contributory infringement?",
+        "answer": "Contributory infringement occurs when a party knowingly contributes to another's infringement of a patent, copyright, or trademark, such as by providing the means to infringe."
+    },
+    {
+        "question": "What is a replevin action?",
+        "answer": "A replevin action is a legal remedy for recovering personal property that has been wrongfully taken or withheld, allowing the owner to regain possession of the property."
+    },
+    {
+        "question": "What is the difference between legal separation and divorce?",
+        "answer": "Legal separation is a court-approved arrangement where spouses live apart but remain legally married, while divorce legally ends the marriage and divides assets and responsibilities."
+    },
+    {
+        "question": "What is a nunc pro tunc order?",
+        "answer": "A nunc pro tunc order is a court order that retroactively corrects a previous order or judgment to reflect what the court originally intended."
+    },
+    {
+        "question": "What is the legal concept of mens rea?",
+        "answer": "Mens rea refers to the mental state or intent of a person at the time of committing a crime, often considered in determining criminal liability."
+    },
+    {
+        "question": "What is the legal concept of actus reus?",
+        "answer": "Actus reus refers to the physical act or unlawful omission that constitutes a criminal offense, as opposed to the mental state of the perpetrator."
+    },
+    {
+        "question": "What is a constructive trust?",
+        "answer": "A constructive trust is an equitable remedy imposed by a court to prevent unjust enrichment by transferring the property in question to the person rightfully entitled to it."
+    }
+]

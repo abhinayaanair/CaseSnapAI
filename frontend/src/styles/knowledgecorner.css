@@ -11,6 +11,7 @@
   height: 100vh;
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 .knowledgeImage{
   background: url(../assets/knowledge.jpg);
@@ -21,7 +22,7 @@
 .leftknowledge{
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  
   width:40%;
   height:90vh
 }
@@ -153,16 +154,16 @@
 }
 .home {
   color: #000000;
-  text-align: left;
+  
   font-family: "Montserrat-SemiBold", sans-serif;
   font-size: 20px;
   font-weight: 600;
   position: absolute;
-  left: 1411px;
-  top: 8vh;
-  width: 206px;
-  height:28px;
+  z-index:10;
+  right:0;
+  
   text-decoration: none;
+  
 }
 
 .bottom-column{
@@ -174,4 +175,17 @@
   left: 0;
   height:20vh;
   text-align: center;
+}
+
+.rightknowledge{
+  display: flex;
+  flex-direction: column;
+  width:40%;
+  height:90vh;
+  margin-left: 20vw;
+  right: 0;
+}
+
+.quesandans{
+  margin-top:40vh ;
 }

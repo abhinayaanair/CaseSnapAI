@@ -22,7 +22,7 @@ const Chat = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('https://casesnapai.onrender.com/chat', { message });
+      const response = await axios.post('https://casesnapai.onrender.com//chat', { message });
 
       console.log("Response data:", response.data); // Debugging line
 
@@ -37,9 +37,9 @@ const Chat = () => {
 
     } catch (error) {
       console.error("Error sending message:", error);
-    } finally {
-      setLoading(false);
     }
+
+    setLoading(false);
   };
 
   const handleKeyPress = (event) => {
