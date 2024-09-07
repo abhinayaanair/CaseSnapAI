@@ -105,7 +105,8 @@ def save_to_image(chat_log):
 
         for word in words:
             test_line = f"{current_line} {word}".strip()
-            line_width, _ = draw.textsize(test_line, font=font)
+            bbox = draw.textbbox((0, 0), test_line, font=font)
+            line_width = bbox[2] - bbox[0]  # bbox gives (left, top, right, bottom)
 
             if line_width <= max_width:
                 current_line = test_line
