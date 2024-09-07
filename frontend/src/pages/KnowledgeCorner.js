@@ -23,16 +23,14 @@ export const KnowledgeCorner = () => {
 
         // Cleanup interval on component unmount
         return () => clearInterval(intervalId);
-    }, []); // Empty dependency array to run only once on component mount
+    }, []);
 
     return (
         <div>
             <div className="mainKnowledge">
-            <div className="home"><a href="/" >Home</a></div>
+                <div className="home"><a href="/" className="homea">Home</a></div>
                 <div className="leftknowledge">
-                    <br />
-                    <br />
-                    <br />
+                    <br /><br /><br />
                     <div className="knowledgeClarityProgress">
                         Knowledge, Clarity, Progress
                     </div>
@@ -46,32 +44,22 @@ export const KnowledgeCorner = () => {
                 </div>
                
                 <div className="rightknowledge">
-                    
-                
-                <div className="quesandans">
-                <h3>Question:</h3>
-                    <p>{randomQA.question}</p>
-                    <h3>Answer:</h3>
-                    <p>{randomQA.answer}</p>
-                </div>
-                    
-                    
+                    <div className="quesandans">
+                        <div className="question">
+                            {randomQA.question}
+                        </div>
+                        <div className="answer">
+                            {randomQA.answer}
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div className="bottom-column">
-                <div className="frame29992">
-                    <div className="clear">Clear</div>
-                </div>
-                <div className="frame3010">
-                    <div className="concise">Concise</div>
-                </div>
-                <div className="frame30082">
-                    <div className="efficient">Efficient</div>
-                </div>
-                <div className="frame30092">
-                    <div className="accurate">Accurate</div>
-                </div>
+                <div className="frame29992"><div className="clear">Clear</div></div>
+                <div className="frame3010"><div className="concise">Concise</div></div>
+                <div className="frame30082"><div className="efficient">Efficient</div></div>
+                <div className="frame30092"><div className="accurate">Accurate</div></div>
             </div>
         </div>
     );

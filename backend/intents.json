@@ -1,12 +1,39 @@
 {
   "intents": [
     {
+      "tag": "greeting",
+      "patterns": [
+        "Hi"
+      ],
+      "responses": [
+        "Hello, how can I help you?"
+      ]
+    },
+    {
       "tag": "legal_issues",
       "patterns": [
         "Hello, I am facing some legal issues related to my business in India. I believe there have been violations of Business and Corporate Laws."
       ],
       "responses": [
         "I see. Can you please provide me with more details about the specific violations you are concerned about?"
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hello"
+      ],
+      "responses": [
+        "Hello, how can I help you?"
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hey there"
+      ],
+      "responses": [
+        "Hello, how can I help you?"
       ]
     },
     {
@@ -47,6 +74,15 @@
       ],
       "responses": [
         "It's important to take this matter seriously and address it promptly. Have you consulted with a legal advisor before taking any action in response to the notice?"
+      ]
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hey"
+      ],
+      "responses": [
+        "Hello, how can I help you?"
       ]
     },
     {
@@ -6365,164 +6401,163 @@
       ]
     },
     {
-  "tag": "debt_recovery",
-  "patterns": [
-    "How do I recover a debt from a business?",
-    "What are the legal steps for debt recovery?",
-    "Can I sue a company for non-payment?",
-    "What happens if a debtor refuses to pay?",
-    "What are the consequences of defaulting on a commercial loan?",
-    "How do I file a lawsuit for unpaid invoices?",
-    "Can I take legal action for breach of payment terms?",
-    "How do I enforce a court judgment for debt recovery?",
-    "What are the rules for commercial debt collection?",
-    "How do I recover a debt through legal channels?"
-  ],
-  "responses": [
-    "Debt recovery involves legal steps to collect money owed by a debtor. This can include sending demand letters, filing a lawsuit, and obtaining a court judgment. If successful, the court can enforce payment through various means.",
-    "If a debtor refuses to pay, you can pursue legal action, such as obtaining a court order or initiating debt collection proceedings. It's essential to have proper documentation of the debt and payment terms."
-  ]
-},
-{
-  "tag": "corporate_governance",
-  "patterns": [
-    "What is corporate governance?",
-    "What are the key principles of corporate governance?",
-    "How can I ensure my company complies with corporate governance laws?",
-    "What are the responsibilities of board members in corporate governance?",
-    "Can shareholders sue for breach of corporate governance?",
-    "What is the role of corporate governance in risk management?",
-    "What happens if a company violates corporate governance laws?",
-    "How do companies ensure good corporate governance?",
-    "What is the importance of transparency in corporate governance?",
-    "How does corporate governance affect the reputation of a company?"
-  ],
-  "responses": [
-    "Corporate governance refers to the system of rules, practices, and processes by which a company is directed and controlled. It ensures accountability, fairness, and transparency in a company's relationship with its stakeholders.",
-    "Key principles of corporate governance include accountability, transparency, fairness, and responsibility. These principles guide how a company operates and interacts with shareholders, employees, and the public.",
-    "Violations of corporate governance laws can lead to legal penalties, loss of investor confidence, and reputational damage."
-  ]
-}
-,{
-  "tag": "bankruptcy_insolvency",
-  "patterns": [
-    "What is bankruptcy?",
-    "What is the difference between bankruptcy and insolvency?",
-    "How do I file for corporate bankruptcy?",
-    "What happens to a company after bankruptcy?",
-    "What are the legal implications of insolvency?",
-    "How can creditors recover debts in a bankruptcy case?",
-    "What are the different types of corporate bankruptcy?",
-    "How can a business restructure its debts?",
-    "What are the consequences of corporate insolvency?",
-    "Can a company continue operating during bankruptcy proceedings?"
-  ],
-  "responses": [
-    "Bankruptcy is a legal process in which a company declares its inability to pay its debts, while insolvency refers to the financial state of being unable to pay debts as they become due. Legal remedies for insolvency include liquidation or restructuring.",
-    "There are different types of bankruptcy, including Chapter 7 (liquidation) and Chapter 11 (reorganization), depending on the jurisdiction and the financial state of the business.",
-    "During bankruptcy, a company can undergo restructuring to continue operating while repaying its creditors. In some cases, the company may be liquidated to satisfy debts."
-  ]
-}
-,{
-  "tag": "arbitration_dispute_resolution",
-  "patterns": [
-    "What is arbitration?",
-    "How does arbitration differ from litigation?",
-    "Can I choose arbitration instead of going to court?",
-    "What are the benefits of arbitration?",
-    "How do I initiate an arbitration process?",
-    "What are the rules for arbitration in commercial disputes?",
-    "Can arbitration decisions be appealed?",
-    "What are the disadvantages of arbitration?",
-    "How is an arbitrator chosen in a commercial dispute?",
-    "Can arbitration be used in international trade disputes?"
-  ],
-  "responses": [
-    "Arbitration is a form of alternative dispute resolution where a neutral third party (the arbitrator) hears both sides of a dispute and makes a binding decision. It's often used in commercial and international disputes.",
-    "The benefits of arbitration include confidentiality, speed, flexibility, and the ability to choose an arbitrator with specific expertise. Unlike litigation, arbitration decisions are typically final and cannot be appealed.",
-    "Arbitration is frequently used in international trade disputes due to its efficiency and enforceability across borders."
-  ]
-}
-,{
-  "tag": "tax_law_compliance",
-  "patterns": [
-    "What is tax compliance?",
-    "How do I ensure my company complies with tax laws?",
-    "What happens if a company fails to comply with tax regulations?",
-    "What are the legal penalties for tax evasion?",
-    "Can a company appeal a tax assessment?",
-    "How do I file a corporate tax return?",
-    "What are the common mistakes in corporate tax filings?",
-    "How does a tax audit work for businesses?",
-    "What is the difference between tax avoidance and tax evasion?",
-    "Can I negotiate with tax authorities on my company's tax obligations?"
-  ],
-  "responses": [
-    "Tax compliance refers to adhering to tax laws, including accurate reporting of income, expenses, and paying taxes on time. Non-compliance can lead to audits, fines, and legal consequences.",
-    "Tax evasion is illegal and can result in severe penalties, including fines and imprisonment, while tax avoidance is the legal use of the tax system to reduce the amount of tax owed.",
-    "If your company is subject to a tax audit, it's essential to have proper documentation of all financial transactions to avoid any legal penalties."
-  ]
-}
-,{
-  "tag": "international_trade_law",
-  "patterns": [
-    "What is international trade law?",
-    "How are international trade disputes resolved?",
-    "What are the rules for importing goods into another country?",
-    "How do I comply with export regulations?",
-    "What are the consequences of violating trade agreements?",
-    "Can I sue for breach of an international trade agreement?",
-    "What is the role of the World Trade Organization in international trade?",
-    "How do tariffs affect international trade?",
-    "What is a trade embargo and how does it work?",
-    "How do free trade agreements impact businesses?"
-  ],
-  "responses": [
-    "International trade law governs the exchange of goods and services across international borders. It includes rules on tariffs, trade agreements, and dispute resolution through organizations like the World Trade Organization (WTO).",
-    "Violating international trade agreements can lead to sanctions, fines, and restrictions on future trade activities. It's crucial for businesses to understand and comply with the regulations in each country they trade with.",
-    "Tariffs are taxes imposed on imported goods, which can affect the cost and availability of products in international trade."
-  ]
-}
-,
-{
-  "tag": "fraud_misrepresentation_contracts",
-  "patterns": [
-    "What is fraud in a contract?",
-    "How do I prove fraud in a business agreement?",
-    "What is misrepresentation in a commercial contract?",
-    "Can I sue for fraud in a contract?",
-    "What are the legal consequences of misrepresentation?",
-    "What are the different types of misrepresentation?",
-    "How do courts handle cases of fraud in contracts?",
-    "Can I terminate a contract due to misrepresentation?",
-    "What is the difference between fraud and negligent misrepresentation?",
-    "What are the remedies for fraud in contract law?"
-  ],
-  "responses": [
-    "Fraud in a contract occurs when one party intentionally misleads another into entering into an agreement. If proven, the defrauded party can sue for damages and, in some cases, rescind the contract.",
-    "Misrepresentation can be fraudulent, negligent, or innocent. Each type has different legal remedies, with fraudulent misrepresentation often leading to the most severe consequences.",
-    "Remedies for fraud in contract law include damages to compensate for losses, rescission to cancel the contract, and, in some cases, punitive damages."
-  ]
-}
-,{
-  "tag": "environmental_compliance",
-  "patterns": [
-    "What are environmental laws for businesses?",
-    "How do I ensure my company complies with environmental regulations?",
-    "What are the penalties for violating environmental laws?",
-    "Can my company be sued for environmental violations?",
-    "How do I conduct an environmental impact assessment?",
-    "What is corporate environmental responsibility?",
-    "What are the legal requirements for waste disposal?",
-    "How do I handle hazardous materials in my business?",
-    "What is the process for obtaining environmental permits?",
-    "What are the consequences of non-compliance with environmental laws?"
-  ],
-  "responses": [
-    "Environmental laws regulate how businesses interact with the environment, including waste disposal, emissions, and the use of hazardous materials. Non-compliance can result in fines, lawsuits, and reputational damage.",
-    "To ensure compliance with environmental regulations, businesses should conduct regular audits, obtain necessary permits, and follow best practices for waste disposal and energy use.",
-    "Companies found violating environmental laws can face significant fines, legal action"]
-}
-
+      "tag": "debt_recovery",
+      "patterns": [
+        "How do I recover a debt from a business?",
+        "What are the legal steps for debt recovery?",
+        "Can I sue a company for non-payment?",
+        "What happens if a debtor refuses to pay?",
+        "What are the consequences of defaulting on a commercial loan?",
+        "How do I file a lawsuit for unpaid invoices?",
+        "Can I take legal action for breach of payment terms?",
+        "How do I enforce a court judgment for debt recovery?",
+        "What are the rules for commercial debt collection?",
+        "How do I recover a debt through legal channels?"
+      ],
+      "responses": [
+        "Debt recovery involves legal steps to collect money owed by a debtor. This can include sending demand letters, filing a lawsuit, and obtaining a court judgment. If successful, the court can enforce payment through various means.",
+        "If a debtor refuses to pay, you can pursue legal action, such as obtaining a court order or initiating debt collection proceedings. It's essential to have proper documentation of the debt and payment terms."
+      ]
+    },
+    {
+      "tag": "corporate_governance",
+      "patterns": [
+        "What is corporate governance?",
+        "What are the key principles of corporate governance?",
+        "How can I ensure my company complies with corporate governance laws?",
+        "What are the responsibilities of board members in corporate governance?",
+        "Can shareholders sue for breach of corporate governance?",
+        "What is the role of corporate governance in risk management?",
+        "What happens if a company violates corporate governance laws?",
+        "How do companies ensure good corporate governance?",
+        "What is the importance of transparency in corporate governance?",
+        "How does corporate governance affect the reputation of a company?"
+      ],
+      "responses": [
+        "Corporate governance refers to the system of rules, practices, and processes by which a company is directed and controlled. It ensures accountability, fairness, and transparency in a company's relationship with its stakeholders.",
+        "Key principles of corporate governance include accountability, transparency, fairness, and responsibility. These principles guide how a company operates and interacts with shareholders, employees, and the public.",
+        "Violations of corporate governance laws can lead to legal penalties, loss of investor confidence, and reputational damage."
+      ]
+    },
+    {
+      "tag": "bankruptcy_insolvency",
+      "patterns": [
+        "What is bankruptcy?",
+        "What is the difference between bankruptcy and insolvency?",
+        "How do I file for corporate bankruptcy?",
+        "What happens to a company after bankruptcy?",
+        "What are the legal implications of insolvency?",
+        "How can creditors recover debts in a bankruptcy case?",
+        "What are the different types of corporate bankruptcy?",
+        "How can a business restructure its debts?",
+        "What are the consequences of corporate insolvency?",
+        "Can a company continue operating during bankruptcy proceedings?"
+      ],
+      "responses": [
+        "Bankruptcy is a legal process in which a company declares its inability to pay its debts, while insolvency refers to the financial state of being unable to pay debts as they become due. Legal remedies for insolvency include liquidation or restructuring.",
+        "There are different types of bankruptcy, including Chapter 7 (liquidation) and Chapter 11 (reorganization), depending on the jurisdiction and the financial state of the business.",
+        "During bankruptcy, a company can undergo restructuring to continue operating while repaying its creditors. In some cases, the company may be liquidated to satisfy debts."
+      ]
+    },
+    {
+      "tag": "arbitration_dispute_resolution",
+      "patterns": [
+        "What is arbitration?",
+        "How does arbitration differ from litigation?",
+        "Can I choose arbitration instead of going to court?",
+        "What are the benefits of arbitration?",
+        "How do I initiate an arbitration process?",
+        "What are the rules for arbitration in commercial disputes?",
+        "Can arbitration decisions be appealed?",
+        "What are the disadvantages of arbitration?",
+        "How is an arbitrator chosen in a commercial dispute?",
+        "Can arbitration be used in international trade disputes?"
+      ],
+      "responses": [
+        "Arbitration is a form of alternative dispute resolution where a neutral third party (the arbitrator) hears both sides of a dispute and makes a binding decision. It's often used in commercial and international disputes.",
+        "The benefits of arbitration include confidentiality, speed, flexibility, and the ability to choose an arbitrator with specific expertise. Unlike litigation, arbitration decisions are typically final and cannot be appealed.",
+        "Arbitration is frequently used in international trade disputes due to its efficiency and enforceability across borders."
+      ]
+    },
+    {
+      "tag": "tax_law_compliance",
+      "patterns": [
+        "What is tax compliance?",
+        "How do I ensure my company complies with tax laws?",
+        "What happens if a company fails to comply with tax regulations?",
+        "What are the legal penalties for tax evasion?",
+        "Can a company appeal a tax assessment?",
+        "How do I file a corporate tax return?",
+        "What are the common mistakes in corporate tax filings?",
+        "How does a tax audit work for businesses?",
+        "What is the difference between tax avoidance and tax evasion?",
+        "Can I negotiate with tax authorities on my company's tax obligations?"
+      ],
+      "responses": [
+        "Tax compliance refers to adhering to tax laws, including accurate reporting of income, expenses, and paying taxes on time. Non-compliance can lead to audits, fines, and legal consequences.",
+        "Tax evasion is illegal and can result in severe penalties, including fines and imprisonment, while tax avoidance is the legal use of the tax system to reduce the amount of tax owed.",
+        "If your company is subject to a tax audit, it's essential to have proper documentation of all financial transactions to avoid any legal penalties."
+      ]
+    },
+    {
+      "tag": "international_trade_law",
+      "patterns": [
+        "What is international trade law?",
+        "How are international trade disputes resolved?",
+        "What are the rules for importing goods into another country?",
+        "How do I comply with export regulations?",
+        "What are the consequences of violating trade agreements?",
+        "Can I sue for breach of an international trade agreement?",
+        "What is the role of the World Trade Organization in international trade?",
+        "How do tariffs affect international trade?",
+        "What is a trade embargo and how does it work?",
+        "How do free trade agreements impact businesses?"
+      ],
+      "responses": [
+        "International trade law governs the exchange of goods and services across international borders. It includes rules on tariffs, trade agreements, and dispute resolution through organizations like the World Trade Organization (WTO).",
+        "Violating international trade agreements can lead to sanctions, fines, and restrictions on future trade activities. It's crucial for businesses to understand and comply with the regulations in each country they trade with.",
+        "Tariffs are taxes imposed on imported goods, which can affect the cost and availability of products in international trade."
+      ]
+    },
+    {
+      "tag": "fraud_misrepresentation_contracts",
+      "patterns": [
+        "What is fraud in a contract?",
+        "How do I prove fraud in a business agreement?",
+        "What is misrepresentation in a commercial contract?",
+        "Can I sue for fraud in a contract?",
+        "What are the legal consequences of misrepresentation?",
+        "What are the different types of misrepresentation?",
+        "How do courts handle cases of fraud in contracts?",
+        "Can I terminate a contract due to misrepresentation?",
+        "What is the difference between fraud and negligent misrepresentation?",
+        "What are the remedies for fraud in contract law?"
+      ],
+      "responses": [
+        "Fraud in a contract occurs when one party intentionally misleads another into entering into an agreement. If proven, the defrauded party can sue for damages and, in some cases, rescind the contract.",
+        "Misrepresentation can be fraudulent, negligent, or innocent. Each type has different legal remedies, with fraudulent misrepresentation often leading to the most severe consequences.",
+        "Remedies for fraud in contract law include damages to compensate for losses, rescission to cancel the contract, and, in some cases, punitive damages."
+      ]
+    },
+    {
+      "tag": "environmental_compliance",
+      "patterns": [
+        "What are environmental laws for businesses?",
+        "How do I ensure my company complies with environmental regulations?",
+        "What are the penalties for violating environmental laws?",
+        "Can my company be sued for environmental violations?",
+        "How do I conduct an environmental impact assessment?",
+        "What is corporate environmental responsibility?",
+        "What are the legal requirements for waste disposal?",
+        "How do I handle hazardous materials in my business?",
+        "What is the process for obtaining environmental permits?",
+        "What are the consequences of non-compliance with environmental laws?"
+      ],
+      "responses": [
+        "Environmental laws regulate how businesses interact with the environment, including waste disposal, emissions, and the use of hazardous materials. Non-compliance can result in fines, lawsuits, and reputational damage.",
+        "To ensure compliance with environmental regulations, businesses should conduct regular audits, obtain necessary permits, and follow best practices for waste disposal and energy use.",
+        "Companies found violating environmental laws can face significant fines, legal action"
+      ]
+    }
   ]
 }

@@ -5,6 +5,7 @@ import "../styles/whatwedo.css";
 export const WhatWeDo = () => {
   return (
     <div className="desktop">
+      <div className="home"><a href="/" className="homea">Home</a></div>
       <div className="overlap-wrapper">
         <div className="overlap">
           <div className="overlap-group">
@@ -16,6 +17,14 @@ export const WhatWeDo = () => {
                 making the legal process more transparent and less intimidating for everyone.
               </p>
             </div>
+            <div className="frame-3">
+            <div className="text-wrapper">
+              Take A<br /> Pledge!
+            </div>
+            <button className="div-wrapper">
+              <div className="text-wrapper-3">Support Us</div>
+            </button>
+          </div>
             <div className="objectives-functions">
               <div className="frame-2">
                 <div className="text-wrapper">Objectives & Functions</div>
@@ -26,20 +35,13 @@ export const WhatWeDo = () => {
                 </p>
               </div>
             </div>
-            <img className="hero-shadow" alt="Hero shadow" src="hero-shadow.png" />
-            <img className="img" alt="Image" src="image.png" />
-            <div className="text-wrapper-2">Home</div>
+            
           </div>
-          <div className="frame-3">
-            <div className="text-wrapper">
-              Take A<br /> Pledge!
-            </div>
-            <div className="div-wrapper">
-              <div className="text-wrapper-3">Support Us</div>
-            </div>
-          </div>
+          
         </div>
       </div>
+      <div className="glow-left"></div>
+      <div className="glow-right"></div>
     </div>
   );
 };
