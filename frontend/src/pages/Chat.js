@@ -76,7 +76,7 @@ const Chat = () => {
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             onKeyPress={handleKeyPress}
-            placeholder="Type your message..."
+            placeholder="Type 'end' to download chat log."
             required
           />
           <button type="submit" disabled={loading}>Send</button>
