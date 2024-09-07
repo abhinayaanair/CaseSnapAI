@@ -35,8 +35,12 @@ client = MongoClient(uri, server_api=ServerApi('1'))
 db = client.get_database('CaseSnap')
 
 # Load NLTK punkt tokenizer
-nltk.data.path.append(os.getenv('NLTK_DATA', '/opt/render/nltk_data'))
-nltk.download('punkt', download_dir=os.getenv('NLTK_DATA', '/opt/render/nltk_data'))
+nltk_data_dir = os.getenv('NLTK_DATA', '/opt/render/nltk_data')
+nltk.data.path.append(nltk_data_dir)
+try:
+    nltk.download('punkt', download_dir=nltk_data_dir)
+except Exception as e:
+    print(f"Error downloading NLTK data: {e}")
 
 # Load the model and data
 model = load_model('chatbot_model3.h5')
@@ -93,7 +97,10 @@ def save_to_image(chat_log):
     image_height = 1200
     image = Image.new('RGB', (image_width, image_height), color='white')
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype("arial.ttf", 16)
+    try:
+        font = ImageFont.truetype("arial.ttf", 16)
+    except IOError:
+        font = ImageFont.load_default()
 
     y_position = 10
     max_y_position = image_height - 10  # Prevent text from going off the bottom of the image
@@ -107,8 +114,7 @@ def save_to_image(chat_log):
 
         for word in words:
             test_line = f"{current_line} {word}".strip()
-            bbox = draw.textbbox((0, 0), test_line, font=font)
-            line_width = bbox[2] - bbox[0]  # bbox gives (left, top, right, bottom)
+            line_width, _ = draw.textsize(test_line, font=font)
 
             if line_width <= max_width:
                 current_line = test_line
