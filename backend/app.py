@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 import cloudinary
 import cloudinary.uploader
 from waitress import serve
-
+print(nltk.data.path)
 # Load environment variables from .env file
 load_dotenv()
 
@@ -37,10 +37,18 @@ db = client.get_database('CaseSnap')
 # Load NLTK punkt tokenizer
 nltk_data_dir = os.getenv('NLTK_DATA', '/opt/render/nltk_data')
 nltk.data.path.append(nltk_data_dir)
+
+# Ensure nltk_data_dir exists
+if not os.path.exists(nltk_data_dir):
+    os.makedirs(nltk_data_dir)
+
 try:
-    nltk.download('punkt', download_dir=nltk_data_dir)
-except Exception as e:
-    print(f"Error downloading NLTK data: {e}")
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    try:
+        nltk.download('punkt', download_dir=nltk_data_dir)
+    except Exception as e:
+        print(f"Error downloading NLTK data: {e}")
 
 # Load the model and data
 model = load_model('chatbot_model3.h5')
