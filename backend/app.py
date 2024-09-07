@@ -6,8 +6,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import numpy as np
 import json
 import pickle
-import nltk
-from nltk.stem import WordNetLemmatizer
+import spacy
 from tensorflow.keras.models import load_model
 from PIL import Image, ImageDraw, ImageFont
 import os
@@ -15,7 +14,7 @@ from dotenv import load_dotenv
 import cloudinary
 import cloudinary.uploader
 from waitress import serve
-print(nltk.data.path)
+
 # Load environment variables from .env file
 load_dotenv()
 
@@ -34,21 +33,8 @@ uri = os.getenv('MONGO_URI')
 client = MongoClient(uri, server_api=ServerApi('1'))
 db = client.get_database('CaseSnap')
 
-# Load NLTK punkt tokenizer
-nltk_data_dir = os.getenv('NLTK_DATA', '/opt/render/nltk_data')
-nltk.data.path.append(nltk_data_dir)
-
-# Ensure nltk_data_dir exists
-if not os.path.exists(nltk_data_dir):
-    os.makedirs(nltk_data_dir)
-
-try:
-    nltk.data.find('tokenizers/punkt')
-except LookupError:
-    try:
-        nltk.download('punkt', download_dir=nltk_data_dir)
-    except Exception as e:
-        print(f"Error downloading NLTK data: {e}")
+# Load spaCy model
+nlp = spacy.load('en_core_web_sm')
 
 # Load the model and data
 model = load_model('chatbot_model3.h5')
@@ -56,9 +42,6 @@ with open('words.pkl', 'rb') as file:
     words = pickle.load(file)
 with open('classes.pkl', 'rb') as file:
     classes = pickle.load(file)
-
-# Initialize lemmatizer
-lemmatizer = WordNetLemmatizer()
 
 # Load intents
 with open('intents.json') as file:
@@ -71,8 +54,8 @@ chat_log = []
 
 # Function to preprocess the input text
 def preprocess_input(text):
-    tokens = nltk.word_tokenize(text)
-    tokens = [lemmatizer.lemmatize(token.lower()) for token in tokens if token not in ignore_letters]
+    doc = nlp(text)
+    tokens = [token.lemma_.lower() for token in doc if token.text not in ignore_letters]
     return tokens
 
 # Function to create a bag of words

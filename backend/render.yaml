@@ -6,7 +6,7 @@ services:
     plan: free
     buildCommand: |
       pip install -r requirements.txt
-      python -c "import nltk; nltk.download('punkt', download_dir='/opt/render/nltk_data')"
+      python -m spacy download en_core_web_sm
     startCommand: python app.py
     envVars:
       - key: CLOUD_NAME
@@ -17,6 +17,4 @@ services:
         value: Z1ySvHVQkJvl_RXGB6qD45qejlY
       - key: MONGO_URI
         value: mongodb+srv://abhinayanair:2rSQQNNGj37OwVML@cluster0.t5tw7sl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-      - key: NLTK_DATA
-        value: /opt/render/nltk_data
     region: oregon
