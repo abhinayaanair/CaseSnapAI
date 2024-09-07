@@ -34,6 +34,10 @@ uri = os.getenv('MONGO_URI')
 client = MongoClient(uri, server_api=ServerApi('1'))
 db = client.get_database('CaseSnap')
 
+# Load NLTK punkt tokenizer
+nltk.data.path.append(os.getenv('NLTK_DATA', '/opt/render/nltk_data'))
+nltk.download('punkt', download_dir=os.getenv('NLTK_DATA', '/opt/render/nltk_data'))
+
 # Load the model and data
 model = load_model('chatbot_model3.h5')
 with open('words.pkl', 'rb') as file:
@@ -85,47 +89,43 @@ def get_response(tag):
 
 # Function to wrap text and save as an image
 def save_to_image(chat_log):
-    # Create an image with white background
     image_width = 800
     image_height = 1200
     image = Image.new('RGB', (image_width, image_height), color='white')
     draw = ImageDraw.Draw(image)
-    font = ImageFont.truetype("arial.ttf", 16)  # Use a truetype font for better control over size
+    font = ImageFont.truetype("arial.ttf", 16)
 
     y_position = 10
     max_y_position = image_height - 10  # Prevent text from going off the bottom of the image
     line_height = 20  # Height of each line of text
 
     def wrap_text(text, max_width, font):
-    # Create an ImageDraw object
         draw = ImageDraw.Draw(Image.new('RGB', (1, 1)))
-    
-    # Split the text into lines that fit within the max_width
         lines = []
         words = text.split()
         current_line = ''
-    
+
         for word in words:
             test_line = f"{current_line} {word}".strip()
             bbox = draw.textbbox((0, 0), test_line, font=font)
             line_width = bbox[2] - bbox[0]  # bbox gives (left, top, right, bottom)
-        
+
             if line_width <= max_width:
                 current_line = test_line
             else:
                 if current_line:
                     lines.append(current_line)
                 current_line = word
-    
+
         if current_line:
             lines.append(current_line)
-    
+
         return lines
 
     for entry in chat_log:
         question_text = f"User: {entry['question']}"
         response_text = f"Bot: {entry['response']}"
-        
+
         # Wrap and draw the question text
         question_lines = wrap_text(question_text, image_width - 20, font)
         for line in question_lines:
@@ -171,7 +171,7 @@ def signup():
     try:
         user = db.users.find_one({'email': email})
         if user:
-            return jsonify({"message": "User already exists try logging in!"}), 400
+            return jsonify({"message": "User already exists, try logging in!"}), 400
 
         hashed_password = generate_password_hash(password, method='pbkdf2:sha256')
         db.users.insert_one({'email': email, 'password': hashed_password})
@@ -218,10 +218,11 @@ def chat():
     predicted_tag = predict_class(user_input)
     response = get_response(predicted_tag)
 
+    # Append chat entry to chat_log
     chat_log.append({'question': user_input, 'response': response})
 
     return jsonify({'response': response})
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if PORT not set
-    app.run(host='0.0.0.0', port=port)
+    port = int(os.environ.get("PORT", 5000))  # Use Render's dynamic port
+    serve(app, host='0.0.0.0', port=port)  # Use waitress for production
