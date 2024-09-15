@@ -22,6 +22,9 @@ export const AboutUs = () => {
           </p>
         </div>
       </div>
+
+      <div className="glow-top-left"></div>
+      <div className="glow-bottom-right"></div>
     </div>
   );
 };
