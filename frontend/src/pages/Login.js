@@ -14,7 +14,7 @@ export const Login = ({ className, ...props }) => {
     e.preventDefault();
     setLoading(true); // Set loading to true when starting authentication
     try {
-      const response = await axios.post('https://casesnapaiserver.vercel.app/login', {
+      const response = await axios.post('https://casesnapai.onrender.com/login', {
         email,
         password,
       });
