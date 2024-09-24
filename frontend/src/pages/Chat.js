@@ -22,7 +22,7 @@ const Chat = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post('https://casesnapai.onrender.com/chat', { message });
+      const response = await axios.post('https://casesnapaiserver.vercel.app/chat', { message });
 
       console.log("Response data:", response.data); // Debugging line
 
