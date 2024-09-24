@@ -1,0 +1,25 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "app.py",
+        "use": "@vercel/python",
+        "config": {
+          "maxLambdaSize": "50mb"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "app.py"
+      }
+    ],
+    "env": {
+      "CLOUD_NAME": "dlv8etgkl",
+      "CLOUD_API_KEY": "958695759171152",
+      "CLOUD_API_SECRET": "Z1ySvHVQkJvl_RXGB6qD45qejlY",
+      "MONGO_URI": "mongodb+srv://abhinayanair:2rSQQNNGj37OwVML@cluster0.t5tw7sl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    }
+  }
+  

@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 import cloudinary
 import cloudinary.uploader
 from waitress import serve
+import requests
 
 # Load environment variables from .env file
 load_dotenv()
@@ -202,6 +203,66 @@ def login():
 
     except Exception as e:
         return jsonify({"message": f"An error occurred: {e}"}), 500
+
+
+API_KEY = os.getenv('GOOGLE_API_KEY')  # Add your API Key in .env
+SEARCH_ENGINE_ID = os.getenv('SEARCH_ENGINE_ID')  # Add your Custom Search Engine ID in .env
+
+def google_search_api(query):
+    search_url = "https://www.googleapis.com/customsearch/v1"
+    params = {
+        'key': API_KEY,
+        'cx': SEARCH_ENGINE_ID,
+        'q': query,
+        'num': 10,  # Number of search results to return
+    }
+    
+    try:
+        response = requests.get(search_url, params=params)
+        response.raise_for_status()  # Raise an error for bad status codes
+        
+        search_data = response.json()
+        search_results = search_data.get('items', [])
+        
+        # Filter the results based on user criteria (example filters)
+        filtered_results = filter_lawyers(search_results)
+        
+        return filtered_results
+    
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching search results: {e}")
+        return None
+
+def filter_lawyers(search_results):
+    filtered = []
+    
+    # Simple filtering based on keywords for now, could expand to more complex logic
+    for result in search_results:
+        title = result.get('title', '').lower()
+        snippet = result.get('snippet', '').lower()
+
+        # Example criteria: Search for lawyers with specific specializations and price range
+        if 'lawyer' in title and 'contract' in snippet and '20000' in snippet:
+            filtered.append({
+                'title': result['title'],
+                'link': result['link'],
+                'snippet': result['snippet']
+            })
+    
+    return filtered
+
+@app.route('/search', methods=['POST'])
+def search_lawyers():
+    user_input = request.json.get('message')
+
+    # Use Google Search API to search for lawyers
+    search_results = google_search_api(user_input)
+
+    if search_results:
+        return jsonify({'results': search_results})
+    else:
+        return jsonify({'message': 'No lawyers found based on your input'}), 404
+
 
 @app.route('/chat', methods=['POST'])
 def chat():
